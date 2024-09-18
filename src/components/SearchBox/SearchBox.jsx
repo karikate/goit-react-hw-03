@@ -1,5 +1,5 @@
-import s from "./SearchList.module.css";
-const SearchList = ({ value, handleFilterContact }) => {
+import s from "./SearchBox.module.css";
+const SearchBox = ({ value, handleFilterContact }) => {
   return (
     <div>
       <label className={s.label}>
@@ -14,4 +14,4 @@ const SearchList = ({ value, handleFilterContact }) => {
   );
 };
 
-export default SearchList;
+export default SearchBox;

@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import ContactForm from "./components/ContactForm/ContactForm";
 import ContactList from "./components/ContactList/ContactList";
-import SearchList from "./components/SearchList/SearchList";
+import SearchBox from "./components/SearchBox/SearchBox";
 
 const INITIAL_STATE = [
   { id: "id-1", name: "Rosie Simpson", number: "459-12-56" },
@@ -38,7 +38,7 @@ function App() {
     <>
       <h1>Phonebook</h1>
       <ContactForm handleAddContact={handleAddContact} />
-      <SearchList value={filter} handleFilterContact={setFilter} />
+      <SearchBox value={filter} handleFilterContact={setFilter} />
       <ContactList
         contactData={visibleContacts}
         handleDeleteContact={handleDeleteContact}
